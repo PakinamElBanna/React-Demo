@@ -26,13 +26,13 @@ class Carts extends Component{
     return (
       <Grid>
       <Grid.Row>
-      <Grid.Column width={8}>
+      <Grid.Column width={5}>
       <div className="Carts">
       <Table basic='very' celled collapsing>
         <Table.Header>
           <Table.Row>
+            <Table.HeaderCell>Users</Table.HeaderCell>
             <Table.HeaderCell>Carts</Table.HeaderCell>
-            <Table.HeaderCell>Cart Details</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 

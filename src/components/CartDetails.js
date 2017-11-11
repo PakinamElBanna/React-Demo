@@ -32,11 +32,7 @@ componentWillReceiveProps(nextProps){
     <table class="ui definition table">
     <tbody>
     <tr>
-    <td class="two wide column"></td>
-    <td><img src={i.item.image.file.thumb.url}/></td>
-    </tr>
-    <tr>
-    <td class="two wide column">Name</td>
+    <td class="two wide column"><img src={i.item.image.file.thumb.url}/></td>
     <td>{i.item.headline}</td>
     </tr>
     <tr>
