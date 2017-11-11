@@ -15,6 +15,7 @@ class Carts extends Component{
   componentDidMount(){
     axios.get('http://localhost:3000/console/v3/carts')
     .then(res => {
+      // console.log(res.data.carts)
       this.setState({
         carts: res.data.carts
       })
@@ -31,7 +32,7 @@ class Carts extends Component{
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>Carts</Table.HeaderCell>
-            <Table.HeaderCell>CartDetails</Table.HeaderCell>
+            <Table.HeaderCell>Cart Details</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 
@@ -50,6 +51,12 @@ class Carts extends Component{
                 </Link>
               </Table.Cell>
               <Table.Cell>
+              <div class="summary">
+              <p>Cart Items: {c.cart_items.length}</p>
+              <p>Elves Fees: {c.elves_fee}</p>
+              <p>Shipping Fees: {c.elves_shipping}</p>
+              <p>Total: {c.total} {c.currency}</p>
+              </div>
               </Table.Cell>
             </Table.Row>
           )
