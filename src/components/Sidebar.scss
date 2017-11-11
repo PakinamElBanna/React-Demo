@@ -1,3 +1,27 @@
 .sidebar{
-  background:red !important;
+  background: #00A2BB !important;
+}
+.primary{
+  background: #fff !important;
+  color: #00A2BB !important;
+}
+.ui{
+  margin: 0 !important;
+}
+.menu{
+  border: 0 !important;
+}
+.logo{
+  width: 125px;
+  margin: 10px;
+  &--image{
+    width: 100%;
+  }
+}
+.tagline{
+  margin: 0 auto;
+    font-weight: bold;
+    color: #00A2BB;
+    text-align: center;
+    margin-top: -5px;
 }
